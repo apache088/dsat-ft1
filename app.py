@@ -2,6 +2,9 @@ from flask import Flask, render_template, request
 import joblib
 from groq import Groq
 import requests
+import os
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 app = Flask(__name__)
 
